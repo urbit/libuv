@@ -96,7 +96,7 @@ endif
 
 os_deps = os_deps + [dl_dep]
 
-lib = library('libuv', sources: src,
+lib = static_library('libuv', sources: src,
  include_directories: incdir,
  dependencies : os_deps,
  version: version,
