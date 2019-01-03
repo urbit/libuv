@@ -46,7 +46,7 @@ src = [
 
 incdir = include_directories('./include/', './src/unix', './src')
 
-osdet = build_machine.system()
+osdet = host_machine.system()
 os_c_flags = []
 os_link_flags = []
 os_deps = []
